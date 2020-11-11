@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[section]{placeins}
+\pagestyle{fancy}
+
+\begin{document}
+\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+\fancyhead[R]{PHYS 2250: General Physics II}
+\fancyfoot[C]{\thepage}
+\vspace*{0cm}
+\begin{center}
+	{\LARGE \textbf{Lab 3}}\\
+	\vspace{.5cm}
+	{\Large Magnetic Field of a Solenoid}
+	%\vspace{0.25cm}
+	%{\Large Due: Friday, September 4}
+\end{center}
+
+\section*{Introduction}
+In class, we learned the expression for the magnetic field of a loop of current: 
+\begin{equation*}
+	|\vec{B}|=\frac{\mu_0}{2}\frac{R^2I}{\left(z^2+R^2\right)^{3/2}}
+\end{equation*}
+Today we will investigate the magnetic field inside a structure of several stacked current loops: a solenoid. The magnetic field of a solenoid can be expressed as:
+\begin{equation}
+	|\vec{B}|=\frac{\mu_0 NI}{L}
+\end{equation}
+Where $I$ is the current, $N$ is the number of loops, or ``turns'' of the solenoid, and $L$ is the length of the solenoid. In this lap, we will measure $B$ as $I$ is varied in order to determine $N$.
+
+\section*{Procedure}
+The procedure for this lab is fairly straightforward:
+\begin{itemize}
+	\item Use the voltage knob on the power supply to vary the current
+	\item Measure the magnetic field for at least 10 different values of current. Try to keep these values evenly spaced.
+	\item You will need to measure the length $L$ of your solenoid.
+\end{itemize}
+
+\section*{Analysis Questions}
+\begin{enumerate}
+	\item You now have a table of current and field values. Using graphing software such as Excel, Google Sheets, Python, etc: make a plot of $B$ vs $I$. What does the slope of this line represent?
+	\item Use this same software to fit your data to a linear curve. What is the slope? What is the intercept? What \textit{should} the intercept be?
+	\item Use your value for $m$ to calculate the number of turns $N$ in the solenoid. Is your result reasonable?
+\end{enumerate}
+
+\end{document}
