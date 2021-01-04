@@ -1,0 +1,22 @@
+\newcommand{\length}{10 cm}
+\question In the circuit shown below, the battery has an emf $\varepsilon=9$ V. $R_1=40\  \Omega$, $R_2=60\ \Omega$, $R_3=20\ \Omega$, $R_4=30\ \Omega$, and $R_5=60\ \Omega$. Find the current through each resistor ($I_1$=current through $R_1$, $I_2$=current through $R_2$, etc...)
+\begin{center}
+\begin{circuitikz} 
+	\draw
+	(0,0) to[battery,l=$\varepsilon$] (0,4)
+	(0,4) to (2,4)
+	(2,4) to (2,5)
+	(2,5) to [resistor,l=$R_1$] (4,5)
+	(4,5) to (4,4)
+	(2,4) to [resistor,l=$R_2$] (4,4)
+	(2,4) to (2,3)
+	(2,3) to [resistor,l=$R_3$] (4,3)
+	(4,3) to (4,4)
+	(4,4) to (6,4)
+	(6,4) to [resistor,l=$R_4$] (6,0)
+	(6,4) to (8,4)
+	(8,4) to [resistor,l=$R_5$] (8,0)
+	(8,0) to (0,0)
+	;
+\end{circuitikz}
+\end{center}

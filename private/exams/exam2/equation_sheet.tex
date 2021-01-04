@@ -1,0 +1,55 @@
+%================
+% Custom commands
+%================
+\thispagestyle{empty}
+\newcommand{\degrees}{$^\circ$}
+\setlength{\parindent}{12pt}
+
+\begin{center}
+\fontsize{20}{20}{\selectfont{\textbf{Potentially useful information}}}\\
+\end{center}
+\begin{multicols}{2}
+\begin{minipage}{\columnwidth}
+\centering\underline{Unit analysis}\\
+\begin{tabular}{c c c}
+Power & Prefix & Name\\
+$10^{12}$ & T & tera\\
+$10^9$ & G & giga\\
+$10^6$ & M & mega\\
+$10^3$ & k & kilo\\
+$10^0$ & --- & ---\\
+$10^{-3}$ & m & milli\\
+$10^{-6}$ & $\mu$ & micro\\
+$10^{-9}$ & n & nano
+\end{tabular}
+\end{minipage}
+
+\vspace{12pt}
+\begin{minipage}{\columnwidth}
+\centering\underline{Constants}
+\begin{align*}
+\epsilon_0 &= 8.85\times 10^{-12} \text{ C}^2/ \left(\text{N}\cdot\text{m}^2\right)\\
+\frac{1}{4\pi\epsilon_0} = k&=9\times 10^9 \text{ N}\cdot \text{m}^2/\text{C}^2\\
+e&=1.6\times 10^{-19} \text{ C}\\
+m_{proton}&=1.67\times 10^{-27}\text{ kg}\\
+m_{electron}&=9.11\times 10^{-31}\text{ kg}\\
+\end{align*}
+\end{minipage}
+
+
+\begin{minipage}{\columnwidth}
+\centering\underline{Electrostatics}
+\begin{align*}
+\text{Dipole, on-axis:}\\ |\efield|&\approx \frac{1}{4\pi\epsilon_0}\frac{2p}{r^3}\\
+\text{Dipole, perpendicular:}\\ |\efield|&\approx \frac{1}{4\pi\epsilon_0}\frac{p}{r^3}\\
+\text{Uniformly charged disk, central axis:}\\|\efield|&=\frac{Q/A}{2\epsilon_0}\left[1-\frac{z}{\left(R^2+z^2\right)^{1/2}}\right]\\
+\text{Capacitor:}\\|\efield|&=\frac{Q/A}{\epsilon_0}\\
+\text{Uniformly charged shell:}\\
+|\efield|(r<R) &= 0\\|\efield|(r>R)|&=\frac{Q}{4\pi\epsilon_0}\frac{1}{r^2}\\
+\text{Uniformly charged solid sphere:}\\
+|\efield|(r<R)&=\frac{Q}{4\pi\epsilon_0}\frac{r}{R^3}\\
+|\efield|(r>R)&=\frac{Q}{4\pi\epsilon_0}\frac{1}{r^2}
+\end{align*}
+\end{minipage}
+
+\end{multicols}
