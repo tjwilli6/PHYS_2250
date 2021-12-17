@@ -1,0 +1,65 @@
+%================
+% Custom commands
+%================
+\thispagestyle{empty}
+\newcommand{\degrees}{$^\circ$}
+\gdef\kmag{\dfrac{\mu_0}{4 \pi}}
+\setlength{\parindent}{12pt}
+
+\begin{center}
+	\fontsize{20}{20}{\selectfont{\textbf{Potentially useful information}}}\\
+\end{center}
+\begin{multicols}{2}
+	\begin{minipage}{\columnwidth}
+		\centering\underline{Unit analysis}\\
+		\begin{tabular}{c c c}
+			Power & Prefix & Name\\
+			$10^{12}$ & T & tera\\
+			$10^9$ & G & giga\\
+			$10^6$ & M & mega\\
+			$10^3$ & k & kilo\\
+			$10^0$ & --- & ---\\
+			$10^{-3}$ & m & milli\\
+			$10^{-6}$ & $\mu$ & micro\\
+			$10^{-9}$ & n & nano
+		\end{tabular}
+	\end{minipage}
+	
+	\vspace{12pt}
+	\begin{minipage}{\columnwidth}
+		\centering\underline{Constants}
+		\begin{align*}
+			\epsilon_0 &= 8.85\times 10^{-12} \text{ C}^2/ \left(\text{N}\cdot\text{m}^2\right)\\
+			\frac{1}{4\pi\epsilon_0} = k&=9\times 10^9 \text{ N}\cdot \text{m}^2/\text{C}^2\\
+			\mu_0&=4 \pi \times 10^{-7} \ \text{T} \cdot \text{ m/A}\\
+			e&=1.6\times 10^{-19} \text{ C}\\
+			m_{proton}&=1.67\times 10^{-27}\text{ kg}\\
+			m_{electron}&=9.11\times 10^{-31}\text{ kg}\\
+		\end{align*}
+	\end{minipage}
+	
+	
+	\begin{minipage}{\columnwidth}
+		%\centering\underline{Electrostatics}
+		\begin{align*}
+			K&= \frac{1}{2} m v^2\ 	\text{Kinetic Energy}\\
+			\Delta V &= -\vec{E}\cdot\Delta\vec{r}\\
+			\Delta V & = \frac{q}{4\pi\epsilon_0}\left(\frac{1}{r_f}-\frac{1}{r_i}\right)\ \text{due to a point charge}\\
+			U &= q\Delta V\\
+			\overline{v}&=uE\\
+			i&=nA\overline{v}\\
+			I&=|q|i\\
+			\Delta \vec{B} &= \kmag \dfrac{I \Delta \vec{l} \times \hat{r}}{r^2}\ \text{short wire}\\
+			\left|{\vec{B}}_{wire}\right| &= \kmag \dfrac{LI}{r \sqrt{r^2 + (L/2)^2}} \approx \kmag \dfrac{2I}{r}\ (r \ll L)\\
+			\left|{\vec{B}}_{loop}\right| &= \kmag \dfrac{2I \pi R^2}{(z^2 + R^2)^{3/2}} \approx \kmag \dfrac{2I \pi R^2}{z^3}\ (z\gg R\ \text{,on axis})\\
+			\left|{\vec{B}}_{dipole,axis}\right| &\approx \kmag \dfrac{2 \mu}{r^3}\\
+			\mu &= IA\\
+			\sigma&=|q|nu\ \text{elec. conductivity}\\
+			R&=\dfrac{L}{\sigma A}\\
+			Q&=C\left|\Delta V\right|\\
+			I&=\frac{\Delta V}{R}\\
+			P&=I\Delta V\\
+		\end{align*}
+	\end{minipage}
+	
+\end{multicols}

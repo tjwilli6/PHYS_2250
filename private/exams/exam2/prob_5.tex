@@ -1,0 +1,23 @@
+\question Consider the circuit shown in the diagram:
+
+\begin{center}
+	\begin{circuitikz}
+		    \draw (0,0) to [battery1=\SI{9}{V}] (3,0);
+		    \draw (0,-3) to [R=$4.7\ \mathrm{k}\Omega$] (0,0);
+		    \draw (3,-3) to [R=$3.3\ \mathrm{k}\Omega$] (0,-3);
+		    \draw(3,0) to [R=$5.1\ \mathrm{k}\Omega$] (3,-3);
+		    \draw [short,*-](0,-3) to (0,-4);
+			\draw (0,-3)  node[anchor=north east] {$A$}; 		    
+		    \draw(0,-4) to (4,-4);
+		    \draw (4,-4) to [qvprobe] (5,-4) to (5,0);
+		    \draw (5,0) to [short,-*](3,0);
+		    \draw (3,0) node[anchor=south west] {$B$};		
+	\end{circuitikz}
+\begin{parts}
+	\part[15] A voltmeter with an internal resistance of $100\ \mathrm{k}\Omega$ is connected at points $A$ and $B$ as shown in the diagram. Note that the positive input of the meter is connected to point $A$, which means the meter is measuring the potential at $A$ relative to the potential at $B$: $\Delta V=V_A-V_B$.
+	
+	What voltage will be displayed by the meter?
+	\vspace{5cm}
+	\part[5] What voltage would be displayed by a theoretically perfect voltmeter (one with infinite resistance)? In other words, what is $V_A-V_B$ when the voltmeter is not connected?
+\end{parts}
+\end{center}

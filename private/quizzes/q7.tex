@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\usepackage{enumitem,amssymb,amsmath}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{circuitikz}
+
+\begin{document}
+	%\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+	\fancyhead[R]{PHYS 2250: General Physics II}
+	\fancyfoot[C]{\thepage}
+	\vspace*{0cm}
+	\begin{center}
+		{\LARGE \textbf{Quiz 7}}
+		%\vspace{0.25cm}
+		%{\Large Due: Friday, September 11}
+	\end{center}
+	
+The following information may or may not be of use:\\
+\hrulefill\\
+\begin{align*}
+	\text{Ohm's Law:}\ I&=\frac{\Delta V}{R}\\
+	\text{Electrical Resistance:}\ R&=\frac{L}{\sigma A}\\
+	\text{Power:}\ P&=I\Delta V\\
+\end{align*}
+
+\hrulefill \\
+\\
+	In the following diagram: $R_1=100\ \Omega$, $R_2=100\ \Omega$, and $R_3=220\ \Omega$. The battery emf $\varepsilon=3.0$ V.
+	\begin{center}
+		\begin{circuitikz} 
+			\draw
+			(0,0) to[battery1,l=$\varepsilon$] (0,4)
+			(0,4) to (4,4)
+			(4,4) to[resistor,l=$R_1$] (4,0)
+			(4,4) to (8,4)
+			(8,4) to [resistor,l=$R_2$] (8,2)
+			(8,2) to [resistor,l=$R_3$] (8,0)
+			(8,0) to (0,0)
+			;
+		\end{circuitikz}
+	\end{center}
+	
+	\begin{enumerate}
+		\item Find the currents $I_1,I_2,I_3$ through each resistor
+		\item What is the power output of the battery?
+	\end{enumerate}
+\end{document}

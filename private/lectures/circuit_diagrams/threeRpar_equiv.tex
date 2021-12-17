@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{enumitem,amssymb}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{center}
+\begin{circuitikz}[scale=1.5]
+	longpot/.style = {pR, resistors/scale=0.75, resistors/width=1.6, resistors/zigs=6}] 
+	\draw (-2,0) to [battery1,l=$\varepsilon$] (2,0);
+	\draw (-2,0) to (-2,-2);
+	\draw (2,0) to (2,-2);
+	\draw (-2,-2) to [resistor,l=$\left(R_1^{-1}+R_2^{-1}+R_3^{-1}\right)^{-1}$] (2,-2);
+\end{circuitikz}
+\end{center}
+\end{document}

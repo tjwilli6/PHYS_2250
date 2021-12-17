@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{enumitem,amssymb}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{center}
+\begin{circuitikz}[scale=1.5]
+	\draw (-2,0) to [battery1,l=$\varepsilon$] (2,0);
+	\draw (2,0) to (2,-2);
+	\draw (-2,0) to [resistor,l=$R$] (-2,-2);
+	\draw (-2,-2) to [capacitor,l=$C$] (2,-2);
+\end{circuitikz}
+\end{center}
+\end{document}
